@@ -2,6 +2,7 @@
 
 :root {
   --clr-font-main: #2a272a;
+  --clr-btn-main: #98a6b6;
 }
 
 * {
@@ -21,6 +22,63 @@ h6 {
   font-family: "Lato", sans-serif;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 .section-normal-padding {
   padding: 1rem 6rem;
+}
+
+.section-bigger-padding {
+  padding: 2rem 6rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-item label {
+  font-size: 1.15rem;
+}
+
+.form-item input {
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-font-main);
+  padding: 0.35rem;
+  text-indent: 0.5rem;
+}
+
+.form-btn {
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-font-main);
+  padding: 0.35rem;
+  text-indent: 0.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: var(--clr-btn-main);
+  transition: 0.2s ease-in-out;
+}
+
+.form-btn:hover {
+  background-color: var(--clr-font-main);
 }

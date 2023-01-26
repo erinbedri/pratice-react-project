@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Register() {
   return (
-    <section className="section-normal-padding">
-      <h1>Register</h1>
+    <section className="section-bigger-padding centered">
+      <h1 className="section-title">Register</h1>
     </section>
   );
 }
