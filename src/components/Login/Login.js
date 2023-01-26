@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import "./login.css";
+import { login } from "../../services/authService";
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -20,7 +21,10 @@ export default function Login() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    login(formData.email, formData.password).then((authData) => {
+      console.log(authData);
+    });
   };
 
   return (
