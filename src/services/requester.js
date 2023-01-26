@@ -13,10 +13,10 @@ const request = async (method, url, data) => {
         body: JSON.stringify(data),
       });
     }
+
     const response = await buildRequest;
     const result = await response.json();
 
-    console.log(result);
     return result;
   } catch (error) {
     console.log(error);

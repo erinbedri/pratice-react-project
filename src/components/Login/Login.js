@@ -22,9 +22,9 @@ export default function Login() {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    login(formData.email, formData.password).then((authData) => {
-      console.log(authData);
-    });
+    login(formData.email, formData.password).then((authData) =>
+      console.log(authData)
+    );
   };
 
   return (
