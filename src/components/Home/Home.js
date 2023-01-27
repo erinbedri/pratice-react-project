@@ -11,7 +11,9 @@ export default function Home() {
         <section id="home" className="section-bigger-padding centered">
             <h1>Home Page</h1>
             {user.accessToken ? (
-                <p style={{ marginTop: "1rem" }}>Welcome back, {user.email}</p>
+                <p style={{ marginTop: "1rem" }}>
+                    Welcome back, {user.fname} {user.lname}
+                </p>
             ) : (
                 ""
             )}

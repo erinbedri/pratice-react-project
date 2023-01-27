@@ -10,6 +10,8 @@ export default function Register() {
 
     const [formData, setFormData] = useState({
         email: "",
+        fname: "",
+        lname: "",
         password: "",
         confirmPassword: "",
     });
@@ -29,7 +31,12 @@ export default function Register() {
             return;
         }
 
-        authService.register(formData.email, formData.password);
+        authService.register(
+            formData.email,
+            formData.password,
+            formData.fname,
+            formData.lname
+        );
         navigate("/login");
     };
 
@@ -44,6 +51,24 @@ export default function Register() {
                             type="email"
                             id="email"
                             name="email"
+                            onChange={changeHandler}
+                        />
+                    </div>
+                    <div className="form-item">
+                        <label htmlFor="fname">First Name:</label>
+                        <input
+                            type="text"
+                            id="fname"
+                            name="fname"
+                            onChange={changeHandler}
+                        />
+                    </div>
+                    <div className="form-item">
+                        <label htmlFor="lname">Last Name:</label>
+                        <input
+                            type="text"
+                            id="lname"
+                            name="lname"
                             onChange={changeHandler}
                         />
                     </div>
