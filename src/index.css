@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --clr-font-main: #2a272a;
-  --clr-btn-main: #98a6b6;
+    --clr-font-main: #2a272a;
+    --clr-btn-main: #98a6b6;
 }
 
 * {
-  color: var(--clr-font-main);
+    color: var(--clr-font-main);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -19,66 +19,71 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 h1 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .section-normal-padding {
-  padding: 1rem 6rem;
+    padding: 1rem 6rem;
 }
 
 .section-bigger-padding {
-  padding: 2rem 6rem;
+    padding: 2rem 6rem;
 }
 
 .section-title {
-  text-align: center;
-  margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .centered {
-  display: flex;
-  justify-content: center;
-  min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
 }
 
 .form-item label {
-  font-size: 1.15rem;
+    font-size: 1.15rem;
 }
 
 .form-item input {
-  border-radius: 0.5rem;
-  border: 1px solid var(--clr-font-main);
-  padding: 0.35rem;
-  text-indent: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-font-main);
+    padding: 0.35rem;
+    text-indent: 0.5rem;
 }
 
 .form-btn {
-  margin: 0.5rem 0;
-  border-radius: 0.5rem;
-  border: none;
-  padding: 0.35rem;
-  text-indent: 0.5rem;
-  cursor: pointer;
-  color: white;
-  background-color: var(--clr-btn-main);
-  transition: 0.2s ease-in-out;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.35rem;
+    text-indent: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: var(--clr-btn-main);
+    transition: 0.2s ease-in-out;
 }
 
 .form-btn:hover {
-  background-color: var(--clr-font-main);
+    background-color: var(--clr-font-main);
+}
+
+.error {
+    color: red;
+    font-weight: bold;
 }

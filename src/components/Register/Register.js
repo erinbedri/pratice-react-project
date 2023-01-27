@@ -28,6 +28,11 @@ export default function Register() {
     const submitHandler = (e) => {
         e.preventDefault();
 
+        if (!formData.email.includes("@")) {
+            setError("Invalid email address!");
+            return;
+        }
+
         if (formData.password != formData.confirmPassword) {
             setError("Passwords do not match!");
             return;
