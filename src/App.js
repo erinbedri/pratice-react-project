@@ -10,28 +10,32 @@ import Register from "./components/Register/Register";
 import Logout from "./components/Logout/Logout";
 
 function App() {
-  const [auth, setAuth] = useState({});
+    const [auth, setAuth] = useState({});
 
-  const userLogin = (authData) => {
-    setAuth(authData);
-  };
+    const userLogin = (authData) => {
+        setAuth(authData);
+    };
 
-  return (
-    <AuthContext.Provider value={{ user: auth, userLogin }}>
-      <div className="App">
-        <Header />
+    const userLogout = () => {
+        setAuth({});
+    };
 
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/logout" element={<Logout />} />
-          </Routes>
-        </main>
-      </div>
-    </AuthContext.Provider>
-  );
+    return (
+        <AuthContext.Provider value={{ user: auth, userLogin, userLogout }}>
+            <div className="App">
+                <Header />
+
+                <main>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/register" element={<Register />} />
+                        <Route path="/logout" element={<Logout />} />
+                    </Routes>
+                </main>
+            </div>
+        </AuthContext.Provider>
+    );
 }
 
 export default App;
