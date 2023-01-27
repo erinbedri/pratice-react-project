@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 import "./login.css";
-import { login } from "../../services/authService";
+import * as authService from "../../services/authService";
 import { AuthContext } from "../../contexts/AuthContext";
 
 export default function Login() {
@@ -26,7 +26,8 @@ export default function Login() {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    login(formData.email, formData.password)
+    authService
+      .login(formData.email, formData.password)
       .then((authData) => {
         userLogin(authData);
         navigate("/");
