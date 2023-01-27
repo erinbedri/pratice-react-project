@@ -8,9 +8,10 @@ import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Logout from "./components/Logout/Logout";
+import { useLocalStorage } from "./hooks/useLocalStorae";
 
 function App() {
-    const [auth, setAuth] = useState({});
+    const [auth, setAuth] = useLocalStorage("auth", {});
 
     const userLogin = (authData) => {
         setAuth(authData);

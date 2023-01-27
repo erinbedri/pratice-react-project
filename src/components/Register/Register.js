@@ -46,11 +46,11 @@ export default function Register() {
                 formData.lname
             )
             .then((registerData) => {
-                if (registerData.code !== 200) {
+                if (registerData.accessToken) {
+                    navigate("/login");
+                } else {
                     setError(registerData.message);
-                    return;
                 }
-                navigate("/login");
             });
     };
 
