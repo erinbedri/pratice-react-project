@@ -15,6 +15,8 @@ export default function Login() {
         password: "",
     });
 
+    const [error, setError] = useState("");
+
     const changeHandler = (e) => {
         setFormData((oldData) => ({
             ...oldData,
@@ -29,6 +31,11 @@ export default function Login() {
         authService
             .login(formData.email, formData.password)
             .then((authData) => {
+                if (authData.code == 403) {
+                    setError(authData.message);
+                    return;
+                }
+
                 userLogin(authData);
                 navigate("/");
             })
@@ -41,6 +48,8 @@ export default function Login() {
         <section id="login" className="section-bigger-padding centered">
             <form>
                 <h1 className="section-title">Login</h1>
+                {error && <div className="form-item error">{error}</div>}
+
                 <div className="form">
                     <div className="form-item">
                         <label htmlFor="email">Email:</label>
