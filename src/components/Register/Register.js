@@ -15,6 +15,8 @@ export default function Register() {
         confirmPassword: "",
     });
 
+    const [error, setError] = useState("");
+
     const changeHandler = (e) => {
         setFormData((oldData) => ({
             ...oldData,
@@ -27,22 +29,31 @@ export default function Register() {
         e.preventDefault();
 
         if (formData.password != formData.confirmPassword) {
+            setError("Passwords do not match!");
             return;
         }
 
-        authService.register(
-            formData.email,
-            formData.password,
-            formData.fname,
-            formData.lname
-        );
-        navigate("/login");
+        authService
+            .register(
+                formData.email,
+                formData.password,
+                formData.fname,
+                formData.lname
+            )
+            .then((registerData) => {
+                if (registerData.code !== 200) {
+                    setError(registerData.message);
+                    return;
+                }
+                navigate("/login");
+            });
     };
 
     return (
         <section id="login" className="section-bigger-padding centered">
             <form>
                 <h1 className="section-title">Register</h1>
+                {error && <div className="form-item error">{error}</div>}
                 <div className="form">
                     <div className="form-item">
                         <label htmlFor="email">Email:</label>
