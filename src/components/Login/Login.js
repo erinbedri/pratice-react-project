@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 import "./login.css";
 import { login } from "../../services/authService";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export default function Login() {
   const navigate = useNavigate();
+  const { userLogin } = useContext(AuthContext);
 
   const [formData, setFormData] = useState({
     email: "",
@@ -26,10 +28,11 @@ export default function Login() {
 
     login(formData.email, formData.password)
       .then((authData) => {
-        console.log("auth data", authData);
+        userLogin(authData);
+        navigate("/");
       })
       .catch(() => {
-        navigate("/");
+        console.log("error");
       });
   };
 
