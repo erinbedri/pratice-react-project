@@ -10,7 +10,7 @@ export default function Login() {
         title: "",
         category: "",
         maxSpeed: "",
-        year: "",
+        year: null,
         imageUrl: "",
         summary: "",
     });
@@ -36,6 +36,11 @@ export default function Login() {
             setError(
                 '"Title", "Category" and "Year of Production" are mandatory fields!'
             );
+            return;
+        }
+
+        if (formData.year < 1900 || formData.year > 2023) {
+            setError('"Year of Production" must be between 1900 and 2023!');
             return;
         }
 
