@@ -26,6 +26,11 @@ export default function Header() {
                         </div>
                         <div>
                             <Link to="logout" className="main-nav-link">
+                                Add Car
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="logout" className="main-nav-link">
                                 Logout
                             </Link>
                         </div>
