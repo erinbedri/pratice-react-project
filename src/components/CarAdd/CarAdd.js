@@ -65,7 +65,7 @@ export default function Login() {
 
                 <div className="form">
                     <div className="form-item">
-                        <label htmlFor="email">Title:</label>
+                        <label htmlFor="title">Title:</label>
                         <input
                             type="text"
                             id="title"
@@ -74,7 +74,7 @@ export default function Login() {
                         />
                     </div>
                     <div className="form-item">
-                        <label htmlFor="email">Category:</label>
+                        <label htmlFor="category">Category:</label>
                         <input
                             type="text"
                             id="category"
@@ -83,7 +83,7 @@ export default function Login() {
                         />
                     </div>
                     <div className="form-item">
-                        <label htmlFor="email">Top Speed:</label>
+                        <label htmlFor="maxSpeed">Top Speed:</label>
                         <input
                             type="text"
                             id="maxSpeed"
@@ -92,7 +92,7 @@ export default function Login() {
                         />
                     </div>
                     <div className="form-item">
-                        <label htmlFor="email">Year of Production:</label>
+                        <label htmlFor="year">Year of Production:</label>
                         <input
                             type="number"
                             min={1900}
@@ -103,7 +103,7 @@ export default function Login() {
                         />
                     </div>
                     <div className="form-item">
-                        <label htmlFor="email">Image URL:</label>
+                        <label htmlFor="imageUrl">Image URL:</label>
                         <input
                             type="text"
                             id="imageUrl"
@@ -112,7 +112,7 @@ export default function Login() {
                         />
                     </div>
                     <div className="form-item">
-                        <label htmlFor="email">Description:</label>
+                        <label htmlFor="summary">Description:</label>
                         <textarea
                             type="textarea"
                             rows={5}
