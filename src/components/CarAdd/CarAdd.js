@@ -4,6 +4,8 @@ import { useState } from "react";
 import * as carsService from "../../services/carsService";
 
 export default function Login() {
+    const currentYear = new Date().getFullYear();
+
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
@@ -39,8 +41,10 @@ export default function Login() {
             return;
         }
 
-        if (formData.year < 1900 || formData.year > 2023) {
-            setError('"Year of Production" must be between 1900 and 2023!');
+        if (formData.year < 1900 || formData.year > currentYear) {
+            setError(
+                `"Year of Production" must be between 1900 and ${currentYear}!`
+            );
             return;
         }
 
@@ -92,7 +96,7 @@ export default function Login() {
                         <input
                             type="number"
                             min={1900}
-                            max={2023}
+                            max={currentYear}
                             id="year"
                             name="year"
                             onChange={changeHandler}
