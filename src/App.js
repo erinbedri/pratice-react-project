@@ -9,7 +9,8 @@ import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Logout from "./components/Logout/Logout";
 import CarDetails from "./components/CarDetails/CarDetails";
-import { useLocalStorage } from "./hooks/useLocalStorae";
+import CarAdd from "./components/CarAdd/CarAdd";
+import { useLocalStorage } from "./hooks/useLocalStorage";
 
 function App() {
     const [auth, setAuth] = useLocalStorage("auth", {});
@@ -31,6 +32,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/cars/:carId" element={<CarDetails />} />
+                        <Route path="/cars/add" element={<CarAdd />} />
 
                         <Route path="/login" element={<Login />} />
                         <Route path="/register" element={<Register />} />

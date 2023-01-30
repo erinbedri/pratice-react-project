@@ -48,6 +48,8 @@ h1 {
 .form {
     display: flex;
     flex-direction: column;
+
+    width: 500px;
 }
 
 .form-item {
@@ -61,6 +63,13 @@ h1 {
 }
 
 .form-item input {
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-font-main);
+    padding: 0.35rem;
+    text-indent: 0.5rem;
+}
+
+.form-item textarea {
     border-radius: 0.5rem;
     border: 1px solid var(--clr-font-main);
     padding: 0.35rem;

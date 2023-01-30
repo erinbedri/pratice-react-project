@@ -20,17 +20,19 @@ export default function Header() {
                 {user.accessToken ? (
                     <>
                         <div>
-                            <span style={{ fontWeight: 600 }}>
+                            <span
+                                style={{ fontWeight: 600, marginRight: "2rem" }}
+                            >
                                 {user.email}
                             </span>
                         </div>
                         <div>
-                            <Link to="logout" className="main-nav-link">
+                            <Link to="/cars/add" className="main-nav-link">
                                 Add Car
                             </Link>
                         </div>
                         <div>
-                            <Link to="logout" className="main-nav-link">
+                            <Link to="/logout" className="main-nav-link">
                                 Logout
                             </Link>
                         </div>
