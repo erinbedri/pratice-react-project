@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Logout from "./components/Logout/Logout";
+import CarDetails from "./components/CarDetails/CarDetails";
 import { useLocalStorage } from "./hooks/useLocalStorae";
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
                 <main>
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/cars/:carId" element={<CarDetails />} />
+
                         <Route path="/login" element={<Login />} />
                         <Route path="/register" element={<Register />} />
                         <Route path="/logout" element={<Logout />} />

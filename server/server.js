@@ -1527,10 +1527,11 @@
                 title: "Tesla Model S",
                 category: "Electric Car",
                 maxSpeed: "249 km/h",
+                year: 2018,
                 imageUrl:
-                    "https://www.tesla.com/sites/default/files/modelsx-new/social/model-s-social.jpg",
+                    "https://tesla-cdn.thron.com/delivery/public/image/tesla/f53054f4-30da-4a94-8aac-1aa6f662996d/bvlatuR/std/1200x628/Model-S-Social?quality=auto-medium&format=auto",
                 summary:
-                    "The Tesla Model S is a premium electric car with advanced technology and long-range capabilities. A popular choice for eco-conscious car enthusiasts.",
+                    "The Tesla Model S is a premium electric car that offers cutting-edge technology and long-range capabilities. With its sleek, aerodynamic design and advanced battery technology, the Model S is able to travel up to 402 miles on a single charge. It also features a spacious, high-tech interior with a large touch screen display, advanced driver-assist systems, and a host of other cutting-edge features. Whether you're an eco-conscious car enthusiast, a tech buff, or just someone who wants to reduce their carbon footprint, the Tesla Model S is an excellent choice.",
                 _createdOn: 1617194128618,
             },
             "1840a313-225c-416a-817a-9954d4609f7c": {
@@ -1538,10 +1539,11 @@
                 title: "Ferrari 488 GTB",
                 category: "Sports Car",
                 maxSpeed: "329 km/h",
+                year: 2009,
                 imageUrl:
-                    "https://www.ferrari.com/en-EN/wp-content/uploads/sites/5/2022/01/488-GTB-front-left-01.jpg",
+                    "https://www.h-r.com/wp-content/uploads/2022/11/911.jpg",
                 summary:
-                    "The Ferrari 488 GTB is a high-performance sports car with a stylish design and powerful engine. A must-have for Ferrari fans and speed enthusiasts.",
+                    "The Ferrari 488 GTB is a high-performance sports car that embodies the style, power, and performance that Ferrari is famous for. With its powerful engine and aerodynamic design, this car is capable of reaching top speeds of up to 329 km/h. Inside, you'll find a luxurious, driver-focused cockpit with cutting-edge technology and materials, including premium leather seats and advanced infotainment systems. Whether you're a Ferrari fan, a speed enthusiast, or just someone who loves the thrill of the open road, the Ferrari 488 GTB is the ultimate driving machine.",
                 _createdOn: 1617194210928,
             },
             "126777f5-3277-42ad-b874-76d043b069cb": {
@@ -1549,10 +1551,11 @@
                 title: "Lamborghini Huracan Evo",
                 category: "Super Car",
                 maxSpeed: "325 km/h",
+                year: 2014,
                 imageUrl:
-                    "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/huracan/evo/poster/portrait/lamborghini-huracan-evo-model-portrait-yellow-1920x1080.jpg",
+                    "https://imgr1.auto-motor-und-sport.de/Lamborghini-Hurac-n-EVO-RWD-react169Big-a8057d9c-1659606.jpg",
                 summary:
-                    "The Lamborghini Huracan Evo is a high-performance super car with a sleek design and powerful engine. A popular choice for luxury car enthusiasts.",
+                    "The Lamborghini Huracan Evo is a high-performance super car that is engineered for speed, style, and luxury. With its sleek, aerodynamic design and powerful engine, this car is capable of reaching top speeds of up to 325 km/h. Inside, you'll find a high-tech interior with cutting-edge technology and premium materials, including advanced infotainment systems and a host of other advanced features. Whether you're a luxury car enthusiast, a speed freak, or just someone who loves the thrill of the open road, the Lamborghini Huracan Evo is a must-have.",
                 _createdOn: 1617194295474,
             },
             "a43d5567-76b5-47e2-b231-77409eda7a61": {
@@ -1560,10 +1563,11 @@
                 title: "Porsche 911 GT3",
                 category: "Sports Car",
                 maxSpeed: "318 km/h",
+                year: 2003,
                 imageUrl:
-                    "https://www.porsche.com/dam/porsche-ng/models/911/gt3/porsche-911-gt3-modelimage-1920x1080.jpg",
+                    "https://cdn.motor1.com/images/mgl/8APZKM/s3/porsche-911-gt3-rs-tribute-to-carrera-rs-package.jpg",
                 summary:
-                    "The Porsche 911 GT3 is a high-performance sports car with advanced engineering and design. A popular choice for Porsche fans and car enthusiasts.",
+                    "The Porsche 911 is a high-performance sports car that has been a staple of the Porsche brand for over 50 years. With its iconic design, powerful engine, and advanced technology, this car is capable of reaching top speeds of up to 308 km/h. Inside, you'll find a high-tech interior with cutting-edge technology and premium materials, including advanced infotainment systems and a driver-focused cockpit. ",
                 _createdOn: 1617194628685,
             },
             "a43d5567-76b5-47e2-b231-77409eda7a62": {
@@ -1571,10 +1575,11 @@
                 title: "McLaren 720S",
                 category: "Super Car",
                 maxSpeed: "341 km/h",
+                year: 2012,
                 imageUrl:
-                    "https://www.mclaren.com/media/image/2020/03/30/69/mcLaren-720s-coupe-sport-1440-420.jpg",
+                    "https://mclaren.scene7.com/is/image/mclaren/Design_03?wid=1200&hei=692",
                 summary:
-                    "The McLaren 720S is a high-performance super car with innovative technology and design. A popular choice for luxury car enthusiasts.",
+                    "The McLaren 720S is a high-performance super car that is engineered for speed, style, and luxury. With its sleek, aerodynamic design and powerful engine, this car is capable of reaching top speeds of up to 341 km/h. Inside, you'll find a high-tech interior with cutting-edge technology and premium materials, including advanced infotainment systems and a host of other advanced features. Whether you're a luxury car enthusiast, a speed freak, or just someone who loves the thrill of the open road, the McLaren 720S is a must-have.",
                 _createdOn: 1617194638685,
             },
             "a43d5567-76b5-47e2-b231-77409eda7a63": {
@@ -1582,10 +1587,11 @@
                 title: "Audi R8",
                 category: "Sports Car",
                 maxSpeed: "330 km/h",
+                year: 2010,
                 imageUrl:
-                    "https://www.audi.com/content/dam/nemo/gb/models/r8/r8-spyder/1920x1080.jpg",
+                    "https://cdn.motor1.com/images/mgl/XB32Xe/s3/2023-audi-r8-v10-gt-rwd.jpg",
                 summary:
-                    "The Audi R8 is a high-performance sports car with advanced technology and design. A popular choice for Audi fans and car enthusiasts.",
+                    "The Audi R8 is a high-performance sports car that combines the speed and power of a super car with the everyday practicality of an Audi. With its advanced all-wheel drive system, powerful engine, and aerodynamic design, this car is capable of reaching top speeds of up to 330 km/h. Inside, you'll find a high-tech interior with cutting-edge technology and premium materials, including advanced infotainment systems and a driver-focused cockpit. Whether you're a speed enthusiast, a car buff, or just someone who wants a car that can do it all, the Audi R8 is an excellent choice.",
                 _createdOn: 1617194648685,
             },
         },

@@ -1,4 +1,42 @@
 #home {
     display: block;
-    text-align: center;
+}
+
+.cars-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    padding-left: 0;
+
+    list-style: none;
+}
+
+.car-item {
+    border: 1px solid black;
+    border-radius: 0.75rem;
+    padding: 1rem;
+
+    width: 23.2%;
+}
+
+.car-item-title {
+    margin-bottom: 0.5rem;
+}
+
+.car-details-btn {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+
+    color: white;
+    background-color: var(--clr-btn-main);
+
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.car-details-btn:hover {
+    background-color: var(--clr-font-main);
 }

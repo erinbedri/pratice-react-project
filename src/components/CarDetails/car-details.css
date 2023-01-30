@@ -1,0 +1,16 @@
+#car-details {
+    display: flex;
+    gap: 3rem;
+}
+
+.car-desc {
+    width: 100%;
+}
+
+.car-desc-title {
+    margin-bottom: 1rem;
+}
+
+.car-desc-info > p {
+    margin-bottom: 0.5rem;
+}
