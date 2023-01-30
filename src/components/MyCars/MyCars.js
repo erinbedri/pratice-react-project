@@ -9,8 +9,6 @@ export default function MyCars() {
     const [myCurrentCars, setMyCurrentCars] = useState([]);
     const { user } = useContext(AuthContext);
 
-    console.log(user._id);
-
     useEffect(() => {
         carsService.getMyCars(user._id).then((res) => {
             setMyCurrentCars(res);
