@@ -29,8 +29,8 @@ export default function Login() {
         e.preventDefault();
 
         if (
-            formData.title == "" &&
-            formData.year == "" &&
+            formData.title == "" ||
+            formData.year == "" ||
             formData.category == ""
         ) {
             setError(

@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState, useContext } from "react";
+import { useParams, Link } from "react-router-dom";
 
 import * as carsServices from "../../services/carsService";
 import "./car-details.css";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export default function CarDetails() {
+    const { user } = useContext(AuthContext);
+
     const params = useParams();
 
     const [car, setCar] = useState({});
@@ -38,6 +41,18 @@ export default function CarDetails() {
                             {car.summary}
                         </p>
                     </div>
+                    {user.accessToken && user._id === car._ownerId ? (
+                        <>
+                            <Link to={`/cars/${car._id}/edit`}>
+                                <button className="btn">Edit</button>
+                            </Link>
+                            <Link to={`/cars/${car._id}/delete`}>
+                                <button className="btn">Delete</button>
+                            </Link>
+                        </>
+                    ) : (
+                        ""
+                    )}
                 </div>
             </div>
             <div className="car-desc-right">

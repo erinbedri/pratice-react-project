@@ -10,6 +10,8 @@ import Register from "./components/Register/Register";
 import Logout from "./components/Logout/Logout";
 import CarDetails from "./components/CarDetails/CarDetails";
 import CarAdd from "./components/CarAdd/CarAdd";
+import CarEdit from "./components/CarEdit/CarEdit";
+import CarDelete from "./components/CarDelete/CarDelete";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 
 function App() {
@@ -33,6 +35,11 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/cars/:carId" element={<CarDetails />} />
                         <Route path="/cars/add" element={<CarAdd />} />
+                        <Route path="/cars/:carId/edit" element={<CarEdit />} />
+                        <Route
+                            path="/cars/:carId/delete"
+                            element={<CarDelete />}
+                        />
 
                         <Route path="/login" element={<Login />} />
                         <Route path="/register" element={<Register />} />

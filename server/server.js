@@ -1548,7 +1548,7 @@
             },
             "126777f5-3277-42ad-b874-76d043b069cb": {
                 _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                title: "Lamborghini Huracan Evo",
+                title: "Lamborghini Huracan",
                 category: "Super Car",
                 maxSpeed: "325 km/h",
                 year: 2014,
