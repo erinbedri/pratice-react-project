@@ -12,6 +12,7 @@ import CarDetails from "./components/CarDetails/CarDetails";
 import CarAdd from "./components/CarAdd/CarAdd";
 import CarEdit from "./components/CarEdit/CarEdit";
 import CarDelete from "./components/CarDelete/CarDelete";
+import MyCars from "./components/MyCars/MyCars";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
                 <main>
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/my-cars" element={<MyCars />} />
                         <Route path="/cars/:carId" element={<CarDetails />} />
                         <Route path="/cars/add" element={<CarAdd />} />
                         <Route path="/cars/:carId/edit" element={<CarEdit />} />

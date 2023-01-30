@@ -32,6 +32,11 @@ export default function Header() {
                             </Link>
                         </div>
                         <div>
+                            <Link to="/my-cars/" className="main-nav-link">
+                                My Garage
+                            </Link>
+                        </div>
+                        <div>
                             <Link to="/logout" className="main-nav-link">
                                 Logout
                             </Link>

@@ -12,3 +12,6 @@ export const deleteCar = (carId) => request.del(`${baseUrl}/${carId}`);
 
 export const editCar = (carId, carData) =>
     request.put(`${baseUrl}/${carId}`, carData);
+
+export const getMyCars = (ownerId) =>
+    request.get(`${baseUrl}/?where=_ownerId%3D%22${ownerId}%22`);
